@@ -1,0 +1,1399 @@
+/*
+Theme Name: Monica Browne Weddings
+Theme URI: http://monicabrowneweddings.com
+Author: Kester Browne
+Author URI: http://wordpress.org/
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #E7E2DF;
+	transition: all 1s ease-in;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.script {
+	font-family: 'Great Vibes', cursive;
+}
+
+.blog-wrap, 
+.wrap, 
+.container, 
+.blog-container {
+	width: 960px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.blog-container,
+.wrap {
+	background: #fff;
+	padding: 0 1em;
+}
+
+.blog-wrap {
+	background: #fff;
+	border-bottom: 1px solid #B5AEA8;
+}
+
+h1.page-title {
+	color: #fff;
+	font-size: 2.5rem;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	padding: 3rem 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+#logo {
+	max-width: 30rem;
+	display: block;
+	margin: 0 auto;
+}
+
+a {
+	color: #933469;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+/********************************
+					Gallery
+*********************************/
+
+.packery:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+/********************************
+					Font Styles
+*********************************/
+
+.value-proposition p {
+	color: #b5aea8;
+}
+
+.value-proposition h2 {
+	color: #933469;
+	padding-top: 1rem;
+}
+
+p {
+	color: #B5AEA8;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	line-height: 1.6;
+}
+
+.open-sans {
+	color: #fafafa;
+	font-size: 1em;
+}
+
+.press-contact-btn {
+	color: #fff;
+	font-size: 1.8rem;
+	text-align: center;
+	padding: 1rem 0;
+	margin: 1rem 0;
+	background: #933469;
+}
+
+.social-icon {
+	width: 1.3em;
+}
+
+/********************************
+							Header
+*********************************/
+
+header {
+	padding-top: 1rem;
+}
+
+.menu {
+	text-align: center;
+}
+
+.menu-btn {
+	color: #B5AEA8;
+	display: inline-block;
+	padding: .3rem 1.5rem;
+	margin: 1rem;
+	border: 1px solid #B5AEA8;
+	cursor: pointer;
+}
+
+nav {
+	display: none;
+}
+
+nav ul.navigation li a {
+	color: #B5AEA8;
+	text-decoration: none;
+	display: block;
+	text-transform: uppercase;
+}
+
+ul.navigation li a {
+	padding: 1rem 0;
+	margin: .1rem 0;
+}
+
+ul.navigation li a:hover {
+	color: #fff;
+	background: #B5AEA8;
+}
+
+.social-icons ul li a:hover {
+	background: transparent;
+}
+
+.nav-social-icon {
+	width: 1.2rem;
+}
+
+li p {
+	color: #B5AEA8;
+	font-size: 1.5rem;
+}
+
+.newsletter-form {
+	display: none;
+}
+
+ul.icon-menu li {
+	display: none;
+}
+
+
+ul.social-links li {
+	display: inline;
+	padding: .5rem;
+}
+
+/********************************
+							Section
+*********************************/
+
+.big-blocks {
+	padding-bottom: 2.5rem;
+}
+
+.bx-wrapper {
+	margin: 0 auto 0;
+}
+
+.bx-wrapper .bx-viewport {
+	left: 0;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	display: none;
+}
+
+.section-title {
+	text-align: center;
+	font-weight: 300;
+}
+
+.contact-btn {
+	text-align: center;
+	display: inline;
+	padding: 1rem;
+	background-color: transparent;
+}
+
+.value-proposition {
+	margin-bottom: 2rem;
+}
+
+.contact-btn,
+.help-btn,
+.services-btn {
+    display: inline-block;
+    padding: 0.5em;
+    background-color: #933469;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    box-shadow: .2em .2em #222;
+    position: relative;
+}
+
+.bride-proposition span.normal-font {
+	font-size: 1em;
+	color: #fafafa;
+}
+
+.script-font {
+	color: #fafafa;
+	font-size: 2rem;
+	font-family: 'Great Vibes', cursive;
+	margin: -0.2em 0;
+}
+
+.press-stuff {
+	margin-bottom: 1rem;
+}
+
+.press-content {
+	margin-bottom: 1rem;
+}
+
+/********************************
+					Box Section
+*********************************/
+
+section.big-blocks p {
+	line-height: normal;
+}
+
+.box-1,
+.box-2,
+.box-3, .box-4, .box-5, .box-6 {
+	color: #fff;
+	text-align: center;
+	height: 10em;
+	margin: 1rem 0;
+	display: table;
+	width: 100%;
+	background: #E7E2DF;
+}
+
+.box-2, .box-4, .box-6 {
+	background-color: #fff;
+	border: 1px solid #E7E2DF;
+} 
+
+.press{
+	border: 1px solid #E7E2DF;
+	background: #fff;
+}
+
+.testimonial {
+	border: 1px solid #E7E2DF;
+	background: #fff;
+}
+
+.box-1.testimonial p {
+	padding: 0.8rem;
+	height: 2rem;
+}
+
+.box-2.testimonial {
+	padding: 0.8rem;
+	height: 20rem;
+}
+
+.box-3.testimonial {
+	padding: 0.8rem;
+	height: 2rem;
+}
+
+p.monica {
+	font-size: 3rem;
+}
+
+/********************************
+					Box 1
+*********************************/
+
+p.get-inspired {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: #fafafa;
+	text-shadow: 3px 3px #B5AEA8;
+	letter-spacing: .1em;
+}
+
+p.over-on-the {
+	margin-top: -.2em;
+	margin-bottom: -.6em;
+	font-family: 'Great Vibes', cursive;
+	font-size: 2em;
+}
+
+p.big {
+	color: #fafafa;
+	font-size: 3.5em;
+	text-transform: uppercase;
+	text-shadow: 3px 3px #B5AEA8;
+	letter-spacing: 0.5rem;
+}
+
+/********************************
+					Box 3
+*********************************/
+
+.box-2 p {
+	font-size: 1.2em;
+}
+
+/********************************
+					Box 3
+*********************************/
+
+.box-3 p {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	color: #fafafa;
+}
+
+/********************************
+					Box 4
+*********************************/
+
+.box-2 p {
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+.monica-front-page-img {
+	float: left;
+	width: 37%;
+}
+
+p.monica-name {
+	font-size: 1.8em;
+	padding-top: 1em;
+}
+
+span.about {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-weight: thin;
+	display: block;
+}
+
+.box-4 p span.script {
+	color: #933469;
+}
+
+p span.script {
+	font-size: 1.5em;
+}
+
+/********************************
+					Box 5
+*********************************/
+
+.box-5 p {
+	font-size: 1.5em;
+}
+
+ul.fp-services li p {
+	font-size: 1.4em;
+	color: #fafafa;
+	text-transform: uppercase;
+}
+
+/********************************
+					Box 6
+*********************************/
+
+.box-6 p {
+	font-size: 1.5em;
+}
+
+span.normal-font {
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+p.mbw {
+	color: #933469;
+	font-size: 3rem;
+	font-weight: 300;
+	letter-spacing: .2em;
+	margin-top: -0.2em;
+}
+
+.box-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/********************************
+				End Boxes
+*********************************/
+
+
+figcaption {
+	float: left;
+	width: 8rem;
+}
+
+article p {
+	padding: .5rem 0;
+}
+
+blockquote {
+	border: 2px solid #E7E2DF;
+	padding: 2rem;
+	margin-bottom: 1rem;
+}
+
+blockquote p {
+	padding-bottom: .8rem;
+}
+
+p strong {
+	color: #933469;
+}
+
+.left-quotes {
+	display: none;
+}
+
+blockquote p strong {
+	float: right;
+}
+
+.ww-logo {
+	width: 6em;
+}
+
+#container {
+	max-width: 100%;
+	margin: 0px auto;
+	padding-bottom: 2rem;
+}
+
+.packery:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+ul.fp-services {
+	padding-left: 0;
+	margin-top: -0.4em;
+}
+
+.page-banner {
+	text-align: center;
+	background: #fff;
+	padding-bottom: 2em;
+}
+
+.press-title,
+.testimonial-title,
+.about-title {
+	color: #933469;
+	font-size: 1.8rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+.press-title,
+.testimonial-title {
+	text-align: left;
+}
+
+.about-content {
+	padding-bottom: 1em;
+}
+
+.about-services p,
+.about-content p,
+.testimonial-content p {
+	color: #B5AEA8;
+}
+
+.testimonial-section {
+	display: none;
+}
+
+.heart-img {
+	display: block;
+	width: 45%;
+	padding: 1.5rem 0;
+	margin: 0 auto;
+}
+
+.heart-img-small {
+	display: block;
+	margin: 0 auto;
+	max-width: 60%;
+}
+
+.testimonial-content {
+	width: 100%;
+}
+
+.contact-img {
+	display: none;
+}
+
+figure {
+	margin: 0;
+}
+
+.grid-sizer,
+.item,
+.item.w2 {
+	width: 100%;
+}
+
+.gutter-sizer {
+	width: 2%;
+}
+
+.item {
+	margin: 1% 0;
+}
+
+
+/********************************
+				Forms
+*********************************/
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+	height: 48px;
+	width: 100%;
+	margin: 1rem 0;
+	border-color: #eee;
+	padding-left: 1rem;
+	border: 1px solid #eee;
+}
+
+textarea {
+	height: 300px;
+	width: 100%;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	border: 1px solid #eee;
+}
+
+article[type="submit"] {
+	height: 48px;
+	margin: 1rem 0;
+	border: 1px solid #eee;
+	padding: 0 2em;
+	background-color: transparent;
+}
+
+button[type="submit"] {
+	height: 48px;
+	margin: 1rem 0;
+	border: 1px solid #eee;
+	padding: 0 2em;
+	background-color: transparent;
+}
+
+/********************************
+				Service Page
+*********************************/
+
+.services-header h2 span {
+	font-family: 'Great Vibes', cursive;
+}
+
+.services-header,
+.services-header-2, 
+.services-header-3 {
+	background: #933469;
+	text-align: center;
+	height: 10em;
+	margin-bottom: 1em;
+}
+
+.services-header-2 {
+	background: #E7E2DF
+}
+
+.services-header-2 span.script {
+	display: block;
+	padding-top: 0.4em;
+	margin-bottom: -0.4em;
+	color: #B5AEA8;
+	font-size: 1.2em;
+}
+
+.services-header-3 {
+	background: #B5AEA8;
+	text-transform: uppercase;
+	padding-top: 2em;
+	text-shadow: 3px 3px #E7E2DF;
+}
+
+.services-header-3 h2.header {
+	font-size: 3.5em;
+}
+
+.services-header span {
+	display: block;
+	margin-top: -0.6em;
+}
+
+.services-header p {
+	font-family: 'Great Vibes', cursive;
+	font-size: 2.2em;
+}
+
+h2.header {
+	color: #fafafa;
+	text-align: center;
+	font-size: 2.5em;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	padding: 0.2em 0;
+}
+
+.value-title {
+	font-size: 1.5em;
+	font-weight: 400;
+	color: #933469;
+	font-family: 'Quicksand', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: .5em;
+}
+
+span.uppcase {
+	text-transform: uppercase;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	padding: 1rem 0;
+	margin-bottom: 1rem;
+	background: url("img/flowers-12-1.jpg") no-repeat;
+	text-transform: uppercase;
+	filter: contrast(120%) brightness(90%);
+}
+
+section.services:last-child {
+	border-bottom: none;
+}
+
+.about-content p:first-child {
+	padding-top: 0;
+}
+
+.about-content p {
+	padding-top: 1rem;
+}
+
+p.all-the-best {
+	margin-bottom: 3rem;
+}
+
+h2.services {
+	font-family: 'Great Vibes', cursive;
+	font-size: 2.5rem;
+	text-align: center;
+	color: #933469;
+	padding: 1rem;
+}
+
+figure.services img {
+	margin-bottom: 0.5rem;
+	padding: .4rem;
+	border: 1px solid #E7E2DF;
+}
+
+div.services-text p:first-child {
+	padding-top: 1rem;
+}
+
+div.services-text p {
+	color: #B5AEA8;
+	padding-bottom: 1rem;
+}
+
+.monica-pic {
+	display: none;
+}
+
+/********************************
+				Buttons
+*********************************/
+
+.contact-btn a {
+	text-decoration: none;
+}
+
+.services-btn {
+	text-align: center;
+	color: #fff;
+	background: #933469;
+	padding: 0.5em;
+	margin-bottom: 2em;
+	margin-top: 1em;
+	position: relative;
+}
+
+.services-btn p {
+	color: #fafafa;
+	font-size: 1.2em;
+}
+
+.services-btn p span {
+	font-family: "Great Vibes", cusive;
+	font-size: 1.5em;
+}
+
+.contact-text {
+	width: 13rem;
+	color: #B5AEA8;
+	display: block;
+	margin: 1rem auto;
+	padding: .5rem 1.8rem;
+	border: 1px solid #B5AEA8;
+	cursor: pointer;
+}
+
+.contact-text:hover {
+	background-color: #933469;
+	color: #fff;
+}
+
+/********************************
+				Button Arrows
+*********************************/
+
+.contact-arrow-back,
+.press-arrow-back {
+	width: 4rem;
+	position: absolute;
+	top: 30%;
+	left: 5%;
+}
+
+.contact-arrow-front,
+.press-arrow-front {
+	width: 4rem;
+	position: absolute;
+	top: 30%;
+	right: 5%;
+}
+
+.arrow-front,
+.arrow-back {
+	display: none;
+}
+
+/********************************
+				Blog
+*********************************/
+
+p.date {
+	display: block;
+	margin-bottom: 1em;
+	margin-top: -0.6rem;
+	font-size: 0.8rem;
+}
+
+article {
+	border-bottom: 2px solid #B5AEA8;
+	margin-bottom: 2rem;
+}
+
+article img {
+	border: 1px solid #B5AEA8;
+	padding: 4px;
+}
+
+.share-links {
+	margin: 1rem 0;
+}
+
+.share-links p {
+	color: #933469;
+}
+
+img.blog-title-img {
+	width: 3.2rem;
+	border: none;
+	display: inline;
+	float: left;
+	padding-right: 1rem;
+	margin-bottom: 1rem;
+}
+
+p.date {
+	margin-bottom: 0;
+}
+
+.article-content p:first-child {
+	padding: 0;
+}
+
+ul.blog-social-links {
+	display: inline-block;
+}
+
+ul.blog-social-links li {
+	display: inline;
+}
+
+.blog-social-links li a img {
+	border: none;
+	width: 1.4rem;
+}
+/********************************
+				Aside
+*********************************/
+
+aside div.social-links a {
+	color: #B5AEA8;
+	display: block;
+	text-decoration: none;
+	font-size: 1.3rem;
+	padding: 1rem;
+}
+
+section.aside-box {
+	border: 2px solid #B5AEA8;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+article h1,
+.date {
+	color: #B5AEA8; 
+}
+
+article h1 {
+	font-size: 1.5rem;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.1rem;
+	color: #933469;
+	margin-bottom: 0.1rem;
+}
+
+.social .icon-twitter {
+	font-size: 3.2rem;
+	color: #B5AEA8;
+	display: inline-block;
+	float: left;
+	padding: 0;
+}
+
+/********************************
+				Twitter Widget
+*********************************/
+
+			
+
+/********************************
+				Footer
+*********************************/
+
+footer .container {
+	color: #b5aea8;
+	font-size: .8rem;
+	text-align: center;
+	padding: 2rem 0;
+}
+
+/********************************
+				Media Quires
+*********************************/
+
+@media (min-width: 481px) {
+
+	figure.services {
+		width: 45%;
+		float: left;
+	}
+
+	div.services-text {
+		width: 50%;
+		float: right;
+	}
+
+	div.services-text p:first-child {
+		padding-top: 0;
+	}
+
+	.heart-img-small {
+		width: 75%;
+	}
+
+	.box-1,
+	.box-2,
+	.box-3, .box-4, .box-5, .box-6 {
+		width: 48%;
+		margin: 1%;
+		float: left;
+	}
+
+	ul.navigation li a:hover {
+		color: #fff;
+		background: #B5AEA8;
+	}
+
+	.item {
+		margin: .35%;
+	}
+
+	.help-btn {
+		margin-bottom: 2rem;
+	}
+
+	.arrow-front,
+	.arrow-back {
+		display: block;
+		width: 5rem;
+		position: absolute;
+	}
+
+	.contact-arrow-back,
+	.arrow-back {
+		top: 35%;
+		left: 5%;
+	}
+
+	.contact-arrow-front,
+	.arrow-front {
+		top: 35%;
+		right: 5%;
+	}
+
+	.press-arrow-back {
+		top: 40%;
+	}
+
+	.press-arrow-front {
+		top: 40%;
+		right: 5%;
+	}
+
+	.press-arrow-front,
+	.press-arrow-back,
+	.contact-arrow-front,
+	.contact-arrow-back {
+		display: block;
+		width: 3rem;
+		position: absolute;
+	}
+
+}
+
+@media (min-width: 718px) {  
+
+	ul.icon-menu {
+		margin-top: 1.5rem;
+		margin-right: 3rem;
+	}
+
+	ul.icon-menu li {
+		display: inline-block;
+		padding: 0 0.5rem;
+
+
+	}
+
+	img.blog-title-img {
+		margin-bottom: 1rem;
+	}
+
+	.wrap {
+		padding: 0 1.5rem;
+	}
+
+	nav {
+		margin: 1rem 0;
+	}
+
+	.bxslider li img {
+		height: 216px;
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	.menu-btn {
+		display: none;
+	}
+	
+	.arrow-front,
+	.arrow-back {
+		width: 3rem;
+	}
+
+	.social-icons > ul > li > a > img {
+		padding: .2rem 0;
+	}
+
+	nav {
+		margin-top: 1rem;
+	}
+
+	.nav-form {
+		display: none;
+	}
+
+	nav {
+		display: inline-block;
+	}
+
+	nav ul.navigation  {
+		width: 100%;
+		text-align: center;
+	}
+
+	ul.navigation li {
+		display: inline;
+	}
+
+	ul.navigation li a {
+		display: inline;
+		text-decoration: none;
+		font-size: 1rem;
+		padding: 5px 18px;
+	}
+
+	ul.social-links li a {
+		padding: 0;
+	}
+
+	ul.social-links li a:hover {
+		background-color: transparent;
+	}
+
+	ul.navigation li a:hover {
+		color : #fff;
+		background: #933469;
+	}
+
+	nav ul.navigation li a {
+		display: inline-block;
+	}
+
+	ul.navigation {
+		float: left;
+	}
+
+	ul.icon-menu {
+		float: right;
+	}
+
+	ul.icon-menu li a {
+		display: inline;
+	}
+
+
+	.social-icons {
+		display: none;
+	}
+
+	.nav-social-icon {
+		width: .8rem;
+	}
+
+	div.header .newsletter-form {
+		display: none;
+	}
+
+	.page-banner {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	.section-title {
+		font-size: 1em;
+		font-weight: 400;
+		text-align: left;
+		padding-bottom: .5em;
+	}
+
+	.help-btn {
+		margin-top: 2.5rem;
+		margin-bottom: 2rem;
+		position: relative;
+	}
+
+	.box-1,
+	.box-2,
+	.box-3, .box-4, .box-5, .box-6 {
+		float: left;
+		width: 31.333333333333%;
+		margin: 1%;
+	}
+
+	.g-img-1,
+	.g-img-2,
+	.g-img-3, .g-img-4, .g-img-5, .g-img-6 {
+		float: left;
+		/*width: 31.333333333333%;
+		margin: 1%; */
+		width: 48%;
+		margin: 1%;
+	}
+
+	figure.services,
+	figure.about-monica  {
+		width: 25%;
+		float: left;
+	}
+
+	.about-content,
+	div.services-text {
+		width: 72%;
+		float: right;
+	}
+
+	.about-services {
+		padding: 0 1.5rem;
+	}
+
+	.page-title {
+		font-size: 4rem;
+	}
+
+	.testimonial-section {
+		display: block;
+		margin-bottom: 2rem;
+	}
+
+	.testimonial-img {
+		display: block;
+		width: 31.333333333333%;
+		height: 10rem;
+		float: left;
+		margin-top: 1%;
+		border: 2px solid #eee;
+		background: #E7E2DF;
+	}
+
+	.testimonial-content {
+		width: 62.666666666666%;
+		float: right;
+	}
+
+	form.contact-form {
+		width: 55%;
+		float: right;
+	}
+
+	.grid-sizer,
+	.item,
+	.item.w2 {
+	  width: 32.66666666666667%;
+	  float: left;
+	}
+
+	blockquote {
+		border: 2px solid #E7E2DF;
+		padding: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	blockquote p {
+		padding-bottom: .5rem;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.left-quotes {
+		display: block;
+		margin-left: 1rem;
+		width: 3rem;
+	}
+
+	.wedding-services {
+		width: 31.333333333333%;
+		float: left;
+		margin: 1%;
+	}
+
+	.wedding-services h3 {
+		padding: 1em;
+	}
+
+	section.social h2,
+	section.categories h2,
+	section.archives h2,
+	section.press-section h2 {
+		margin: 2rem 0;
+		color: #933469;
+		font-size: 2.3rem;
+		font-family: 'Great Vibes', cursive;
+	}
+
+	h2.normal-font,
+	.normal-font {
+		color: #933469;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+		.help-btn {
+		width: 49%;
+		float: right;
+	}
+
+		.value-proposition {
+		width: 50%;
+		float: left;
+	}
+
+	.monica-pic {
+		display: block;
+		margin: 0px auto;
+		padding: .4rem;
+	}
+
+/********************************
+				Blog
+*********************************/
+
+	body.blog nav {
+		margin-top: 0rem;
+	}
+
+	.main-content {
+		width: 65%;
+		float: left;
+		padding: 0 1rem;
+	}
+
+	.main-content h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.monica-blog-img {
+		padding: 2px;
+	}
+
+	aside {
+		width: 33%;
+		padding: 0 1rem;
+		float: right;
+		padding: 0 1rem;
+	}
+
+	aside h1 {
+		padding: .6rem 0;
+		color: #B5AEA8;
+	}
+
+	aside p {
+		padding: .5rem 0;
+	}
+
+	aside .newsletter-form {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	.newsletter-form {
+		margin-top: .8em;
+		display: block;
+		position: relative;
+		float: right;
+		width: 16rem;
+	}
+
+	.signup-form input {
+		height: 16px;
+		font-size: 10px;
+		width: 85%;
+		border: none;
+		padding-left: 7px;
+	}
+
+	.signup-form {
+		position: absolute;
+		top: 45%;
+		left: 3.2em;
+	}
+
+	.press-content {
+		width: 65%;
+		float: left;
+	}
+	
+	.contact-btn {
+		width: 32%;
+		float: right;
+	}
+
+}
+
+@media (min-width: 975px) { 
+
+	.arrow-front,
+	.arrow-back {
+		width: 5rem;
+	}
+
+	.social-icons ul li a:hover {
+		background: transparent;
+	}
+
+	#logo {
+		max-width: 23.625rem;
+		float: left;
+		margin: .5rem 0rem 0 10rem;
+	} 
+
+	.social-icons {
+		display: inline-block;
+	}
+
+	.social-icons ul li a {
+		padding: 3px 3px;
+	}
+
+	.bx-wrapper {
+		margin: 0 auto 0;
+	}
+
+	.bride-proposition,
+	.press-stuff {
+		margin: 0 1%;
+	}
+
+	.value-proposition p {
+		padding: 0;
+	}
+
+	.value-proposition p a {
+		color: #fff;
+	}
+
+	div.header .newsletter-form {
+		display: block;
+	}
+
+}
+
+
